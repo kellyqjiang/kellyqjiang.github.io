@@ -236,30 +236,44 @@
  		 });
 
 		 $('#about').waypoint(function() {
-
-        $(".sidebar").children().removeClass("active");
+			 $("#one").removeClass("active");
+			 $("#five").removeClass("active");
+			 $("#three").removeClass("active");
+			 $("#four").removeClass("active");
         $("#two").addClass("active");
 
       }, { offset: 101 });
 
 
       $('#skills').waypoint(function() {
-        $(".sidebar").children().removeClass("active");
+				$("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#five").removeClass("active");
+				$("#four").removeClass("active");
         $("#three").addClass("active");
       }, { offset: 101 });
 
       $('#projects').waypoint(function() {
-        $(".sidebar").children().removeClass("active");
+				$("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#five").removeClass("active");
         $("#four").addClass("active");
       }, { offset: 101 });
 
       $('#welcome').waypoint(function() {
-        $(".sidebar").children().removeClass("active");
+				$("#five").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#four").removeClass("active");
         $("#one").addClass("active");
       }, { offset: 0 });
 
 			$('#experience').waypoint(function() {
-        $(".sidebar").children().removeClass("active");
+        $("#one").removeClass("active");
+				$("#two").removeClass("active");
+				$("#three").removeClass("active");
+				$("#four").removeClass("active");
         $("#five").addClass("active");
       }, { offset: 0 });
 		</script>
