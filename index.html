@@ -175,6 +175,44 @@
   	color: #fff;
 	}
 
+	nav {
+  top: 0%;
+  width: 100%;
+  position: fixed;
+  background-color: #007bce;
+}
+.container {
+  padding: 22px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container ul li {
+  list-style: none;
+  margin: 0 10px;
+  display: inline-block;
+}
+.container ul li a:hover {
+  padding: 12px;
+  color: #fc0;
+}
+.container ul li a {
+  margin: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.active {
+  border-bottom: 2px solid #d0d7d9;
+}
+.container p{
+margin-bottom: 16px;
+color: #fc0;
+font-weight: 700;
+font-size: 20px;
+}
+
 	.main {
 	  margin-left: 160px; /* Same as the width of the sidebar */
 	  padding: 0px 10px;
@@ -221,10 +259,10 @@
 			return false;
 		 });
 
-		$("#projects").click(function() {
+		$("#four").click(function() {
 			$(this).addClass("active");
 				 $('html,body ') .animate({
-						 scrollTop:        $("#projects").offset().top-112
+						 scrollTop:        $("#four").offset().top-112
 				 }, 1000);
 			return false;
 		 });
@@ -238,27 +276,27 @@
 		 $('#about').waypoint(function() {
 
         $(".container ul li").children().removeClass("active");
-        $("#about").addClass("active");
+        $("#two").addClass("active");
 
       }, { offset: 101 });
 
 
-      $('#three').waypoint(function() {
+      $('#skills').waypoint(function() {
         $(".container ul li").children().removeClass("active");
         $("#three").addClass("active");
       }, { offset: 101 });
 
       $('#projects').waypoint(function() {
         $(".container ul li").children().removeClass("active");
-        $("#projects").addClass("active");
+        $("#four").addClass("active");
       }, { offset: 101 });
 
       $('#welcome').waypoint(function() {
         $(".container ul li").children().removeClass("active");
-        $("#welcome").addClass("active");
+        $("#one").addClass("active");
       }, { offset: 0 });
 
-			$('#five').waypoint(function() {
+			$('#experience').waypoint(function() {
         $(".container ul li").children().removeClass("active");
         $("#five").addClass("active");
       }, { offset: 0 });
