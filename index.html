@@ -197,84 +197,6 @@
 	    background-color: #101010;
 	}
 	</style>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
-		$('#one').addClass("active");
-		$("#one").click(function() {
-				 $('html, body').animate({
-						 scrollTop:        $("#one").offset().top-66
-				 }, 1000);
-			return false;
-		 });
-
-		$("#two").click(function() {
-				 $('html, body') .animate({
-						 scrollTop:        $("#two").offset().top-112
-				 }, 1000);
-			return false;
-		 });
-
-		$("#three").click(function() {
-				 $(' html,body') .animate({
-						 scrollTop:        $("#three").offset().top-112
-				 }, 1000);
-			return false;
-		 });
-
-		$("#four").click(function() {
-			$(this).addClass("active");
-				 $('html,body ') .animate({
-						 scrollTop:        $("#four").offset().top-112
-				 }, 1000);
-			return false;
-		 });
-		 $("#five").click(function() {
- 				 $('html,body ') .animate({
- 						 scrollTop:        $("#five").offset().top-112
- 				 }, 1000);
- 			return false;
- 		 });
-
-		 $('#about').waypoint(function() {
-			 $("#one").removeClass("active");
-			 $("#five").removeClass("active");
-			 $("#three").removeClass("active");
-			 $("#four").removeClass("active");
-        $("#two").addClass("active");
-      }, { offset: 101 });
-
-
-      $('#skills').waypoint(function() {
-				$("#one").removeClass("active");
-				$("#two").removeClass("active");
-				$("#five").removeClass("active");
-				$("#four").removeClass("active");
-        $("#three").addClass("active");
-      }, { offset: 101 });
-
-      $('#projects').waypoint(function() {
-				$("#one").removeClass("active");
-				$("#two").removeClass("active");
-				$("#three").removeClass("active");
-				$("#five").removeClass("active");
-        $("#four").addClass("active");
-      }, { offset: 101 });
-
-      $('#welcome').waypoint(function() {
-				$("#five").removeClass("active");
-				$("#two").removeClass("active");
-				$("#three").removeClass("active");
-				$("#four").removeClass("active");
-        $("#one").addClass("active");
-      }, { offset: 0 });
-
-			$('#experience').waypoint(function() {
-        $("#one").removeClass("active");
-				$("#two").removeClass("active");
-				$("#three").removeClass("active");
-				$("#four").removeClass("active");
-        $("#five").addClass("active");
-      }, { offset: 101 });
-		</script>
 
 <head><title>title test</title></head>
 
@@ -350,4 +272,83 @@
 
 </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+	$('#one').addClass("active");
+	$("#one").click(function() {
+			 $('html, body').animate({
+					 scrollTop:        $("#one").offset().top-66
+			 }, 1000);
+		return false;
+	 });
+
+	$("#two").click(function() {
+			 $('html, body') .animate({
+					 scrollTop:        $("#two").offset().top-112
+			 }, 1000);
+		return false;
+	 });
+
+	$("#three").click(function() {
+			 $(' html,body') .animate({
+					 scrollTop:        $("#three").offset().top-112
+			 }, 1000);
+		return false;
+	 });
+
+	$("#four").click(function() {
+		$(this).addClass("active");
+			 $('html,body ') .animate({
+					 scrollTop:        $("#four").offset().top-112
+			 }, 1000);
+		return false;
+	 });
+	 $("#five").click(function() {
+			 $('html,body ') .animate({
+					 scrollTop:        $("#five").offset().top-112
+			 }, 1000);
+		return false;
+	 });
+
+	 $('#about').waypoint(function() {
+		 $("#one").removeClass("active");
+		 $("#five").removeClass("active");
+		 $("#three").removeClass("active");
+		 $("#four").removeClass("active");
+			$("#two").addClass("active");
+		}, { offset: 101 });
+
+
+		$('#skills').waypoint(function() {
+			$("#one").removeClass("active");
+			$("#two").removeClass("active");
+			$("#five").removeClass("active");
+			$("#four").removeClass("active");
+			$("#three").addClass("active");
+		}, { offset: 101 });
+
+		$('#projects').waypoint(function() {
+			$("#one").removeClass("active");
+			$("#two").removeClass("active");
+			$("#three").removeClass("active");
+			$("#five").removeClass("active");
+			$("#four").addClass("active");
+		}, { offset: 101 });
+
+		$('#welcome').waypoint(function() {
+			$("#five").removeClass("active");
+			$("#two").removeClass("active");
+			$("#three").removeClass("active");
+			$("#four").removeClass("active");
+			$("#one").addClass("active");
+		}, { offset: 0 });
+
+		$('#experience').waypoint(function() {
+			$("#one").removeClass("active");
+			$("#two").removeClass("active");
+			$("#three").removeClass("active");
+			$("#four").removeClass("active");
+			$("#five").addClass("active");
+		}, { offset: 101 });
+	</script>
 </html>
