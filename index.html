@@ -221,16 +221,16 @@
 			return false;
 		 });
 
-		$("#four").click(function() {
+		$("#projects").click(function() {
 			$(this).addClass("active");
 				 $('html,body ') .animate({
-						 scrollTop:        $("#four").offset().top-112
+						 scrollTop:        $("#projects").offset().top-112
 				 }, 1000);
 			return false;
 		 });
 		 $("#five").click(function() {
  				 $('html,body ') .animate({
- 						 scrollTop:        $("#four").offset().top-112
+ 						 scrollTop:        $("#five").offset().top-112
  				 }, 1000);
  			return false;
  		 });
@@ -248,9 +248,9 @@
         $("#three").addClass("active");
       }, { offset: 101 });
 
-      $('#four').waypoint(function() {
+      $('#projects').waypoint(function() {
         $(".container ul li").children().removeClass("active");
-        $("#four").addClass("active");
+        $("#projects").addClass("active");
       }, { offset: 101 });
 
       $('#welcome').waypoint(function() {
