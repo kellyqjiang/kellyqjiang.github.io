@@ -15,11 +15,11 @@
 	 font-weight: normal;
 	 font-style: normal;
 
-}
+	}
 
 	html {
-	scroll-behavior: smooth;
-}
+		scroll-behavior: smooth;
+	}
 
 	h1 {
 		margin: 0;
@@ -194,17 +194,72 @@
 	}
 	</style>
 
+	<body>
+		$('#sec-1').addClass("active");
+		$("#sec-1").click(function() {
+				 $('html, body').animate({
+						 scrollTop:        $("#one").offset().top-66
+				 }, 1000);
+			return false;
+		 });
+
+		$("#sec-2").click(function() {
+				 $('html, body') .animate({
+						 scrollTop:        $("#two").offset().top-112
+				 }, 1000);
+			return false;
+		 });
+
+		$("#sec-3").click(function() {
+				 $(' html,body') .animate({
+						 scrollTop:        $("#three").offset().top-112
+				 }, 1000);
+			return false;
+		 });
+
+		$("#sec-4").click(function() {
+			$(this).addClass("active");
+				 $('html,body ') .animate({
+						 scrollTop:        $("#four").offset().top-112
+				 }, 1000);
+			return false;
+		 });
+
+		 $('#two').waypoint(function() {
+
+        $(".container ul li").children().removeClass("active");
+        $("#sec-2").addClass("active");
+
+      }, { offset: 101 });
+
+
+      $('#three').waypoint(function() {
+        $(".container ul li").children().removeClass("active");
+        $("#sec-3").addClass("active");
+      }, { offset: 101 });
+
+      $('#four').waypoint(function() {
+        $(".container ul li").children().removeClass("active");
+        $("#sec-4").addClass("active");
+      }, { offset: 101 });
+
+      $('#one').waypoint(function() {
+        $(".container ul li").children().removeClass("active");
+        $("#sec-1").addClass("active");
+      }, { offset: 0 });
+		</body>
+
 <head><title>title test</title></head>
 
 <div class="side"></div>
 
 <div class="section full-height">
 <div class="sidebar">
-	<a class="active" href="#welcome">welcome</a>
-  <a href="#about">about</a>
-  <a href="#skills">skills</a>
-  <a href="#projects">projects</a>
-	<a href="#experience">experience</a>
+	<a id = "one" href="#welcome">welcome</a>
+  <a id = "two" href="#about">about</a>
+  <a id = "three" href="#skills">skills</a>
+  <a id = "four" href="#projects">projects</a>
+	<a id = "five" href="#experience">experience</a>
 </div>
 
 <div id="welcome">
