@@ -26,6 +26,7 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
 
 .container {
     display: grid;
@@ -43,7 +44,7 @@
     grid-template-rows: 3fr 0.6fr 1fr;
 		position:relative;
     /*transform: rotate(120deg);*/
-    box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
 .item_1 a {
   background:white;
@@ -174,14 +175,6 @@
     font-size: 14px;
 }
 
-.subs_text {
-    padding: 0 0 0 10px;
-    font-family: 'Lato';
-    font-weight: 0;
-    background: white;
-    display: flex;
-    font-size: 12px;
-}
 
 	html {
 	scroll-behavior: smooth;
@@ -204,10 +197,10 @@
 		margin: 0;
 		padding: 0;
 		font-size: 50px;
-		letter-spacing: 5px;
+		letter-spacing: 1px;
 		font-weight: 900;
-		color: #CCB8FF;
-		font-family:'American Typewriter';
+		color: #000;
+		font-family:'Times New Roman';
 		-webkit-text-stroke-width: 0.5px;
 		-webkit-text-stroke-color: #33006D;
 		line-height: 1;
@@ -298,56 +291,6 @@
   	50% { border-color: black; }
 	}
 
-	.front-pic {
-		position:absolute;
-		height:300px;
-		width:300px;
-		top:30%;
-		left:60%;
-		background-color:#000;
-	}
-
-	.side {
-		height: 100%;
-		width:160px;
-		position:fixed;
-		top:0;
-		left:0;
-		background-color:#000;
-		z-index:-1;
-		overflow-x:hidden;
-	}
-
-	.sidebar {
-		text-align:right;
-		font-family:'Impact';
-		height: 100%;
-		width:160px;
-		position:fixed;
-		z-index:3;
-		top:35%;
-		left:-1%;
-		background-color:transparent;
-		overflow-x:hidden;
-	}
-
-	.sidebar a{
-		padding: 6px 8px 6px 16px;
-  	text-decoration: none;
-  	font-size: 25px;
-  	color: #818181;
-  	display: block;
-	}
-	.sidebar a.active{
-		padding: 6px 8px 6px 16px;
-  	color: #fff;
-  	display: block;
-	}
-
-	.sidebar a:hover {
-  	color: #fff;
-	}
-
 	.main {
 	  margin-left: 160px; /* Same as the width of the sidebar */
 	  padding: 0px 10px;
@@ -400,17 +343,99 @@
 			right: 18.5%;
 			left: 95%;
 			max-width: 40px;
+			height:40px;
 			width: 100%;
 			font-size: 20px;
-			border-color: rgba(85, 85, 85, 0.2);
-			background-color: #fff;
+			background-color: #9bb7d6;
 			padding: .5px;
-			border-radius: 4px;
+			border-radius: 100%;
 
 	}
 /*On Hover Color Change*/
 	#myBtn:hover {
 			color: #000;
+	}
+	#myBtn a {
+			color: #000;
+	}
+
+	.about_strip {
+		background-color: #f7cac9;
+		width: 105%;
+		height: 100%;
+		left: -1%;
+		top: 0%;
+		position:relative;
+		z-index:-1;
+	}
+	.about_strip h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 50px;
+		letter-spacing: 1px;
+		font-weight: 900;
+		color: #000;
+		font-family:'Times New Roman';
+		line-height: 1;
+	}
+
+	.skills_strip {
+		background-color: #DCC5DC;
+		width: 105%;
+		height: 100%;
+		left: -1%;
+		top: 0%;
+		position:relative;
+		z-index:-1;
+	}
+	.skills_strip h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 50px;
+		letter-spacing: 1px;
+		font-weight: 900;
+		color: #000;
+		font-family:'Times New Roman';
+		line-height: 1;
+	}
+
+	.exp_strip {
+		background-color: #ADDFB3;
+		width: 105%;
+		height: 100%;
+		left: -1%;
+		top: 0%;
+		position:relative;
+		z-index:-1;
+	}
+	.exp_strip h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 50px;
+		letter-spacing: 1px;
+		font-weight: 900;
+		color: #000;
+		font-family:'Times New Roman';
+		line-height: 1;
+	}
+	.proj_strip {
+		background-color: #FCD299;
+		width: 105%;
+		height: 100%;
+		left: -1%;
+		top: 0%;
+		position:relative;
+		z-index:-1;
+	}
+	.proj_strip h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 50px;
+		letter-spacing: 1px;
+		font-weight: 900;
+		color: #000;
+		font-family:'Times New Roman';
+		line-height: 1;
 	}
 
 	</style>
@@ -458,8 +483,10 @@
 <div class="section full-height">
 	<button id="myBtn"><a href="#home">⬆</a></button>
 
-	<div class="main" id="about">
-		<h2>ABOUT</h2>
+	<div class="about_strip">
+		<div class="main" id="about">
+			<h2>about.</h2>
+		</div>
 	</div>
 
 
@@ -468,8 +495,10 @@
 <div class="section full-height">
 	<button id="myBtn"><a href="#home">⬆</a></button>
 
-	<div class="main" id="skills">
-		<h2>SKILLS</h2>
+	<div class="skills_strip">
+		<div class="main" id="skills">
+			<h2>skills.</h2>
+		</div>
 	</div>
 
 
@@ -478,8 +507,10 @@
 <div class="section full-height">
 	<button id="myBtn"><a href="#home">⬆</a></button>
 
-	<div class="main" id="exp">
-		<h2>EXPERIENCE</h2>
+	<div class="exp_strip">
+		<div class="main" id="exp">
+			<h2>experience.</h2>
+		</div>
 	</div>
 
 
@@ -488,8 +519,10 @@
 <div class="section full-height">
 	<button id="myBtn"><a href="#home">⬆</a></button>
 
-	<div class="main" id="proj">
-		<h2>PROJECTS</h2>
+	<div class="proj_strip">
+		<div class="main" id="proj">
+			<h2>projects.</h2>
+		</div>
 	</div>
 
 
